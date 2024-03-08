@@ -1,3 +1,125 @@
+Respostas:
+1)c(X)
+2)a(X)
+3)a(X)
+4)a(X)
+5)a(X)
+6)a(X)
+///////////////////////////////////
+
+7)
+class Animal {
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    };
+
+    descrever(){
+        console.log(`Esse é um ${this.nome} que tem ${this.idade} anos.`);
+    };
+};
+
+const cachorro = new Animal('cachorro',3);
+const gato = new Animal('gato',7);
+
+console.log(cachorro.descrever(),gato.descrever());
+///////////////////////////////////////////////////////////////
+
+8)
+class Animal {
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    };
+
+    descrever(){
+        console.log(`Esse é um ${this.nome} que tem ${this.idade} anos.`)
+    };
+};
+
+class Gato extends Animal{
+    constructor(nome, idade, cor){
+        super(nome, idade);
+        this.cor = cor;
+    };
+
+    miar(){
+        console.log('MIAUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
+    };
+};
+
+const cachorro = new Animal('cachorro','6');
+const gato = new Gato('gato','2','preto');
+
+cachorro.descrever();
+gato.descrever();
+gato.miar();
+///////////////////////////////////////////////////
+
+9)
+class SomadorDeNotas{
+    constructor(){
+        this.NotaTotal = 0;
+    };
+
+    adicionarNota(nota){
+        this.NotaTotal += nota;
+    };
+    verTotal(){
+        console.log(`A nota final foi ${this.NotaTotal}`);
+    };
+};
+
+var Somador = new SomadorDeNotas()
+
+Somador.adicionarNota(7);
+Somador.adicionarNota(1.5);
+Somador.adicionarNota(9);
+Somador.adicionarNota(6);
+
+Somador.verTotal();
+//////////////////////////////////////////////////////////
+
+10)
+//criando a classe Funcionário
+class Funcionário{
+    //criando os atributos que compõe um objeto dessa classe
+    cosntructor(nome,idade){
+        this.nome = nome;
+        this.idade = idade;
+        this.salárioBase = 0;
+    };
+
+    calcularSalário(){};
+};
+
+//criando uma classe professor que herda os atributos de sua classe Funcionário
+class Professor extends Funcionário{
+    //criando os atributos que compõe um objeto dessa classe
+    constructor(nome, idade, disciiplina, HoraPorSemana){
+        //chamando os atributos herdados da classe funcionário
+        super(nome, idade);
+        this.disciiplina = disciiplina;
+        this.HoraPorSemana = HoraPorSemana;
+    };
+
+    //método que vai pedir o valo da hora/aula do professor, multiplica pelas horas na semana que ele trabalha e aí vai multiplicar pelas 4 semana do mês e devolver o salário mensal
+    calcularSalário(HorAula){
+        console.log(this.HoraPorSemana * HorAula * 4);
+    };
+};
+
+//criando objetos na classe professor
+var Yan = new Professor('Yan',19,'Computação',168);
+var LuizGonzaga = new Professor('Luiz',111,'Música',7);
+
+//chamando métodos dentro das classes
+Yan.calcularSalário(30);
+LuizGonzaga.calcularSalário(2);
+//////////////////////////////////////////////
+
+
+
 # Instruções
 
 - Faça uma cópia deste arquivo .md para um repositório próprio
