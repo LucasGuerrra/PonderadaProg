@@ -5,7 +5,6 @@ Respostas:
 4)a(X)
 5)a(X)
 6)a(X)
-///////////////////////////////////
 
 7)
 class Animal {
@@ -23,7 +22,6 @@ const cachorro = new Animal('cachorro',3);
 const gato = new Animal('gato',7);
 
 console.log(cachorro.descrever(),gato.descrever());
-///////////////////////////////////////////////////////////////
 
 8)
 class Animal {
@@ -54,7 +52,6 @@ const gato = new Gato('gato','2','preto');
 cachorro.descrever();
 gato.descrever();
 gato.miar();
-///////////////////////////////////////////////////
 
 9)
 class SomadorDeNotas{
@@ -78,7 +75,6 @@ Somador.adicionarNota(9);
 Somador.adicionarNota(6);
 
 Somador.verTotal();
-//////////////////////////////////////////////////////////
 
 10)
 //criando a classe Funcionário
