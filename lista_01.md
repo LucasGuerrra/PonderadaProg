@@ -1,31 +1,31 @@
-Respostas:
-1)c(X)
-2)a(X)
-3)a(X)
-4)a(X)
-5)a(X)
-6)a(X)
+//Respostas:
+//1)c(X)
+//2)a(X)
+//3)a(X)
+//4)a(X)
+//5)a(X)
+//6)a(X)
 ///////////////////////////////////
 
-7)
-class Animal {
-    constructor(nome, idade){
-        this.nome = nome;
-        this.idade = idade;
-    };
+//7)
+//class Animal {
+//    constructor(nome, idade){
+//        this.nome = nome;
+//        this.idade = idade;
+//    };
+//
+//    descrever(){
+//        console.log(`Esse é um ${this.nome} que tem ${this.idade} anos.`);
+//    };
+//};
+//
+//const cachorro = new Animal('cachorro',3);
+//const gato = new Animal('gato',7);
 
-    descrever(){
-        console.log(`Esse é um ${this.nome} que tem ${this.idade} anos.`);
-    };
-};
-
-const cachorro = new Animal('cachorro',3);
-const gato = new Animal('gato',7);
-
-console.log(cachorro.descrever(),gato.descrever());
+//console.log(cachorro.descrever(),gato.descrever());
 ///////////////////////////////////////////////////////////////
 
-8)
+//8)
 class Animal {
     constructor(nome, idade){
         this.nome = nome;
